@@ -1,0 +1,41 @@
+/* Gilroy */
+@font-face {
+  font-family: Gilroy300;
+  src: url(../assets/fonts/Gilroy/Gilroy-300.ttf);
+}
+@font-face {
+  font-family: Gilroy400;
+  src: url(../assets/fonts/Gilroy/Gilroy-400.ttf);
+}
+
+@font-face {
+  font-family: Gilroy500;
+  src: url(../assets/fonts/Gilroy/Gilroy-500.ttf);
+}
+
+@font-face {
+  font-family: Gilroy700;
+  src: url(../assets/fonts/Gilroy/Gilroy-700.ttf);
+}
+
+/* Roboto */
+
+@font-face {
+  font-family: Roboto400;
+  src: url(../assets/fonts/Roboto/Roboto-400.ttf);
+}
+
+/* Roboto Condensed */
+
+@font-face {
+  font-family: RobotoCondensed300;
+  src: url(../assets/fonts/RobotoCondensed/RobotoCondensed-300.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed400;
+  src: url(../assets/fonts/RobotoCondensed/RobotoCondensed-400.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed500;
+  src: url(../assets/fonts/RobotoCondensed/RobotoCondensed-500.ttf);
+}

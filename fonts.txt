@@ -1,0 +1,29 @@
+Gilroy 
+400
+500
+600
+700
+
+Roboto
+400
+
+Roboto Condensed
+300
+400
+500
+
+
+///////////////////////////////////// 
+
+NVIDIA Sans
+500
+700
+
+Inter
+400
+
+SF Pro Display
+400
+
+Montserrat
+500

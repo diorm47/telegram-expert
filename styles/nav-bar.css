@@ -1,0 +1,119 @@
+nav {
+  width: 100%;
+}
+
+.nav_bar_wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.nav_menu {
+  display: flex;
+  gap: 37px;
+}
+
+.nav_menu p {
+  color: #fff;
+  font-family: Gilroy400;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.4s ease;
+}
+.nav_menu p:hover {
+  transition: all 0.4s ease;
+  color: #4fd0ba;
+  text-shadow: 0px 0px 7px #4fd0ba;
+}
+
+.nav_actions {
+  display: flex;
+  align-items: center;
+}
+.login_auth {
+  display: flex;
+  align-items: center;
+}
+.login_auth button {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid black;
+  color: #fff;
+  font-family: Gilroy400;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 31px;
+  padding: 0 13px;
+  transition: all 0.4s ease;
+  border-radius: 7px;
+  background: transparent;
+}
+
+.active_button {
+  border: 1px solid #4fd0ba !important;
+  box-shadow: 0px 0px 7px 0px #4fd0ba;
+
+  height: 31px;
+  color: #4fd0ba;
+  text-shadow: 0px 0px 7px #4fd0ba;
+  font-family: Gilroy400;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 30px;
+}
+
+.login_auth button:hover {
+  transition: all 0.4s ease;
+  border: 1px solid #4fd0ba;
+}
+
+.language_toggles {
+  margin-left: 50px;
+  gap: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.language_toggler {
+  color: #fff;
+  font-family: Gilroy400;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0 4px;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+
+.active_lang_btn {
+  color: #4fd0ba;
+  text-shadow: 0px 0px 7px #4fd0ba;
+  font-family: Gilroy500;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 4px;
+  border: 1px solid #4fd0ba;
+  box-shadow: 0px 0px 7px 0px #4fd0ba;
+}
+
+.language_toggler:hover {
+  transition: all 0.4s ease;
+  color: #4fd0ba;
+  border: 1px solid #4fd0ba;
+  text-shadow: 0px 0px 7px #4fd0ba;
+}
