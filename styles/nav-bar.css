@@ -1,5 +1,6 @@
 nav {
   width: 100%;
+  position: relative;
 }
 
 .nav_bar_wrapper {

@@ -1,0 +1,17 @@
+<svg width="22" height="185" viewBox="0 0 22 185" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="10.6929" cy="21.6929" r="10.2969" transform="rotate(-180 10.6929 21.6929)" stroke="white" stroke-width="0.792066"/>
+    <circle cx="10.6929" cy="59.6929" r="10.2969" transform="rotate(-180 10.6929 59.6929)" stroke="white" stroke-width="0.792066"/>
+    <circle cx="10.6929" cy="97.6929" r="10.2969" transform="rotate(-180 10.6929 97.6929)" stroke="white" stroke-width="0.792066"/>
+    <circle cx="10.6929" cy="135.693" r="10.2969" transform="rotate(-180 10.6929 135.693)" stroke="white" stroke-width="0.792066"/>
+    <circle cx="10.6929" cy="173.693" r="10.2969" transform="rotate(-180 10.6929 173.693)" stroke="white" stroke-width="0.792066"/>
+    <circle cx="10.693" cy="21.693" r="3.5643" transform="rotate(-180 10.693 21.693)" fill="#4FD0BA"/>
+    <circle cx="10.693" cy="59.693" r="3.5643" transform="rotate(-180 10.693 59.693)" fill="#4FD0BA"/>
+    <circle cx="10.693" cy="97.693" r="3.5643" transform="rotate(-180 10.693 97.693)" fill="#4FD0BA"/>
+    <circle cx="10.693" cy="135.693" r="3.5643" transform="rotate(-180 10.693 135.693)" fill="#4FD0BA"/>
+    <circle cx="10.693" cy="173.693" r="3.5643" transform="rotate(-180 10.693 173.693)" fill="#4FD0BA"/>
+    <line x1="10.7921" y1="32" x2="10.7921" y2="49" stroke="white" stroke-width="1.58413"/>
+    <line x1="10.7921" y1="-3.46223e-08" x2="10.7921" y2="11" stroke="white" stroke-width="1.58413"/>
+    <line x1="10.7921" y1="70" x2="10.7921" y2="87" stroke="white" stroke-width="1.58413"/>
+    <line x1="10.7921" y1="108" x2="10.7921" y2="125" stroke="white" stroke-width="1.58413"/>
+    <line x1="10.7921" y1="146" x2="10.7921" y2="163" stroke="white" stroke-width="1.58413"/>
+</svg>

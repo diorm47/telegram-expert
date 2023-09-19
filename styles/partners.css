@@ -1,0 +1,347 @@
+.partners_page {
+  position: relative;
+}
+.partners_content_title h1 {
+  color: #fff;
+  font-family: Gilroy700;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.partners_content_title span {
+  color: #4fd0ba;
+  font-family: Gilroy700;
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.34px;
+  text-transform: uppercase;
+  transform: rotate(-10.45deg);
+}
+
+/*  */
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-left: 8%;
+  margin-bottom: 50px;
+}
+
+.tab {
+  width: 190px;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px 7px 0px 0px;
+  border: 1px solid #4fd0ba;
+  border-bottom: none;
+  margin-bottom: -1px;
+  background: #000;
+  transition: all 0.4s ease;
+  color: #4fd0ba;
+  font-family: Gilroy500;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.tab.active {
+  background: #4fd0ba;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+.tab:hover {
+  background: #1ecdb0;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+.tabs_top_list {
+  width: 100%;
+  border-bottom: 1px solid #4fd0ba;
+}
+.firt_tab_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  gap: 20px;
+}
+
+.firt_tab_card {
+  border-radius: 17.099px;
+  border: 1px solid #3b3b3b;
+  background: #0f0f0f;
+  overflow: hidden;
+}
+
+.firt_tab_card_title {
+  border-radius: 16px 16px 0px 0px;
+  background: #060606;
+  color: #fcf33c;
+  font-family: Gilroy700;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 25px 40px;
+}
+
+.firt_tab_card_content {
+  padding: 25px 45px;
+}
+.bonuses_cart_title {
+  border-radius: 6px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+}
+.bonuses_cart_title p {
+  color: #fff;
+  font-family: RobotoCondensed400;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.firt_tab_card_content_list {
+  display: flex;
+  align-items: start;
+}
+
+.firt_tab_card_content_list img {
+  padding: 0 20px;
+}
+.firt_tab_card_content_list p {
+  color: #fff;
+  font-family: RobotoCondensed400;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 14px 0;
+}
+
+.firt_tab_card_content_list span {
+  color: #fcf33c;
+}
+
+.rules p {
+  color: #ccc;
+  font-family: RobotoCondensed400;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.rules div {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.rules div div p {
+  color: #db6158;
+  font-family: Gilroy400;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 10px 0 20px;
+}
+
+.rules span {
+  color: #d0574f;
+}
+
+.firt_tab_card_sell p {
+  color: #fff;
+  font-family: RobotoCondensed400;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+.firt_tab_card_sell div {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 15px;
+}
+.firt_tab_card_sell img {
+  position: absolute;
+  top: -35px;
+}
+
+.bottom_sell_text p {
+  color: #ccc;
+  font-family: Gilroy400;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 15px;
+}
+
+.conditions_title {
+  text-align: center;
+  margin-top: 130px;
+}
+.conditions_title h3 {
+  color: #fff;
+  font-family: Gilroy700;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.conditions_title p {
+  color: #fff;
+  font-family: Gilroy500;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 55px;
+}
+
+.conditions_card {
+  width: 283px;
+  height: 150px;
+  text-align: center;
+  border-radius: 17.099px;
+  background: #060606;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conditions_card p {
+  color: #fff;
+  font-family: Gilroy700;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+}
+
+.conditions_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  margin-bottom: 70px;
+}
+.conditions_card:first-child {
+  border: 1px solid #4fd0ba;
+  box-shadow: 0px 4px 4px 0px rgba(79, 208, 186, 0.77);
+}
+.conditions_card:first-child span {
+  color: #4fd0ba;
+}
+.conditions_card:nth-child(2) {
+  border: 1px solid #f29141;
+  box-shadow: 0px 4px 4px 0px #f29141;
+}
+.conditions_card:nth-child(2) span {
+  color: #f29141;
+}
+
+.conditions_card:last-child {
+  border: 1px solid #fcf33c;
+  box-shadow: 0px 4px 4px 0px #fcf33c;
+}
+.conditions_card:last-child span {
+  color: #fcf33c;
+}
+
+.activate {
+  color: #fff;
+  font-family: Roboto400;
+  font-size: 17.255px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.auth_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+}
+
+.auth_btns button {
+  width: 260px;
+  height: 52px;
+  color: #fff;
+  font-family: Gilroy500;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 7px;
+  border: 1px solid #e8e8e8;
+}
+.auth_btns button:first-child {
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.auth_btns button:last-child {
+  border: 1px solid #e8e8e8;
+  background: #f2f2f2;
+  color: #000;
+}
+
+.conditions_tab_content {
+  margin-bottom: 300px;
+}
+
+/*  */
+.download_1 {
+  position: absolute;
+}
+
+.download_2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.partners_content {
+  position: relative;
+  z-index: 1111;
+}

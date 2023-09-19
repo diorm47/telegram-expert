@@ -1,6 +1,12 @@
 @import url(./fonts.css);
 @import url(./nav-bar.css);
 @import url(./main-page.css);
+@import url(./accordeon.css);
+@import url(./footer.css);
+@import url(./glow-animation.css);
+@import url(./download-page.css);
+@import url(./partners.css);
+@import url(./responsive.css);
 
 * {
   margin: 0;
@@ -17,4 +23,36 @@ a {
 
 button {
   cursor: pointer;
+}
+
+.slick-center {
+  z-index: 1111;
+  position: relative;
+}
+
+.page_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.gradient_top {
+  position: absolute;
+}
+
+.header_2,
+.section_2,
+.section_4 {
+  position: absolute;
+  right: 0;
+}
+.section_4 {
+  margin-top: -600px;
+}
+
+.pre_footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.vector_gradient {
+  position: absolute;
 }

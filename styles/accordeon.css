@@ -1,0 +1,92 @@
+.collapse-enter-active,
+.collapse-leave-active {
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+.collapse-enter-to,
+.collapse-leave-from {
+  height: var(--ui-transition-height);
+}
+.collapse-enter-from,
+.collapse-leave-to {
+  opacity: 0;
+  height: 0;
+}
+
+.accordion {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+}
+.accordion-item {
+  background-color: transparent;
+  border-radius: 0.25rem;
+  transition: background-color 150ms;
+  &.ui-active {
+    background-color: #fff;
+  }
+}
+.accordion-tab {
+  width: 100%;
+  height: 76.259px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 150ms;
+  border: none;
+  outline: none;
+  background: #4fd0ba;
+  padding: 0 36px;
+  color: #000;
+  font-family: RobotoCondensed500;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 7.519px;
+  cursor: pointer;
+  &:hover {
+    background-color: #08fdd4;
+  }
+  & svg {
+    transition: transform 150ms;
+    width: 1rem;
+  }
+}
+.accordion-panel {
+  border-radius: 0px 0px 9px 9px;
+  padding: 20px 30px;
+  border: 1px solid #4fd0ba;
+  background: #060606;
+  box-shadow: 0px 3.10888px 3.10888px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ui-active .accordion-tab {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 64px;
+}
+.ui-active svg {
+  transform: rotate(-90deg);
+
+}
+.ui-active svg * {
+  fill: #fff;
+}
+
+.accordion-panel p {
+  color: #f2f2f2;
+  font-family: RobotoCondensed400;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170.523%; /* 30.694px */
+  text-align: left;
+}
+.accordion-panel p span {
+  color: #18a3fa;
+}
+
+.accordion {
+  gap: 24px;
+}

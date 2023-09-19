@@ -1,0 +1,70 @@
+.footer_wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer_wrapper_menu_item h4 {
+  color: #fff;
+  font-family: Gilroy500;
+  font-size: 22.06px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 35.296px */
+  margin-bottom: 23px;
+}
+
+.footer_wrapper_menu_item p {
+  margin-bottom: 13px;
+  color: #bab7b7;
+  font-family: Gilroy400;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.4s ease;
+}
+.footer_wrapper_menu_item p:hover {
+  transition: all 0.4s ease;
+  text-decoration: underline;
+}
+
+.footer_wrapper_menu {
+  display: flex;
+  align-items: start;
+  gap: 100px;
+}
+
+.footer_wrapper_menu_list {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.footer_login .active_button {
+  color: #4fd0ba;
+  text-shadow: 0px 0px 7px #4fd0ba;
+}
+.footer_login button:last-child {
+  border: 1px solid #fff;
+}
+
+.footer_wrapper_menu_list {
+  margin-bottom: 25px;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.footer_logo p {
+  color: #c6c6c6;
+  text-align: center;
+  font-family: Gilroy400;
+  font-size: 14.658px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}

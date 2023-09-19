@@ -16,6 +16,10 @@
   line-height: 100%;
   margin-top: 70px;
 }
+.main_page_carousel {
+  position: relative !important;
+  z-index: 111;
+}
 
 .main_page_title p {
   color: #4fd0ba;
@@ -227,6 +231,8 @@
 .shere_chat_img {
   position: absolute;
   right: 0;
+  bottom: -25%;
+  transition: bottom 4s;
 }
 
 .pulse_icon {
@@ -495,13 +501,16 @@
   margin-bottom: 120px;
   gap: 17px;
 }
+.gallery_block {
+  margin-bottom: 120px;
+}
 
 .gallery_btns img {
   cursor: pointer;
 }
 
 .video_block_item {
-  width: 483px;
+  width: 483px !important;
   height: 516px !important;
   border-radius: 7px;
   border: 2px solid rgba(255, 255, 255, 0.22);
@@ -582,6 +591,10 @@
   position: relative;
   z-index: 1111;
 }
+.video_carousel_arrows img:last-child {
+  position: relative;
+  z-index: 1110;
+}
 
 .video_block_item {
   margin: 0 20px;
@@ -603,14 +616,32 @@
   display: flex;
   align-items: center;
   justify-content: end;
+  position: relative;
 }
 
+.view_in_youtube p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #db6158;
+  transform-origin: right bottom;
+  transition: transform 1s ease-out;
+}
+.view_in_youtube :hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
 .view_in_youtube a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .view_in_youtube p {
+  position: relative;
   color: #fff;
   text-align: center;
   font-family: Gilroy700;
@@ -620,6 +651,7 @@
   line-height: normal;
   text-transform: uppercase;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
 .view_in_youtube span {
@@ -631,6 +663,7 @@
 }
 .moduls_price_block {
   margin-top: 220px;
+
 }
 .moduls_price_block h3 {
   color: #fff;
@@ -670,14 +703,6 @@
 
 .toggle_app_lang {
   margin-bottom: 100px;
-}
-
-.price_card {
-  width: 375px;
-  height: 600px;
-  border-radius: 17.099px;
-  border: 1px solid #3b3b3b;
-  background: #131313;
 }
 
 .price_card_type {
@@ -788,15 +813,30 @@
   align-items: center;
   justify-content: center;
   gap: 70px;
+  position: relative;
 }
 .premium_price_card {
-  width: 450px;
+  width: 450px !important;
+}
+.prices_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price_card {
+  width: 375px;
+  height: 600px;
+  border-radius: 17.099px;
+  border: 1px solid #3b3b3b;
+  background: #131313;
+  position: relative;
 }
 .premium_card_buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 23px;
+  padding: 23px;
 }
 .premium_card_buttons button {
   width: 80px;
@@ -884,7 +924,13 @@
   height: 100%;
   border-right: 1px solid #4a4a4a;
 }
+.active_menu_item {
+  background: #262626;
 
+}
+.active_menu_item p {
+  color: #FFF !important;
+}
 .moduls_wrapper_menu_item {
   width: 100%;
   height: 66px;
@@ -894,7 +940,9 @@
   border-bottom: 1px solid #4a4a4a;
   cursor: pointer;
   transition: all 0.4s ease;
+ 
 }
+
 .moduls_wrapper_menu_item:last-child {
   border-bottom: none;
 }
@@ -910,4 +958,266 @@
 .moduls_wrapper_menu_item:hover {
   transition: all 0.4s ease;
   background: #262626;
+}
+
+.additional_moduls_wrapper {
+  display: flex;
+  position: relative;
+  z-index: 1111;
+  background: #0F0F0F;
+  overflow: hidden;
+}
+.additional_moduls_content {
+  padding: 85px 65px 65px 80px;
+  width: 70%;
+}
+
+.additional_moduls_content h3 {
+  color: #fff;
+  font-family: Gilroy700;
+  font-size: 37.4px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 59.84px */
+  margin-bottom: 57px;
+}
+.additional_content_list {
+  padding-left: 20px;
+}
+
+.additional_content_list li {
+  color: #f5f5f5;
+  font-family: Gilroy400;
+  font-size: 17.534px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.055px */
+}
+
+.programm_lang {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 7px;
+}
+
+.programm_lang p {
+  color: #f2f2f2;
+  font-family: Gilroy400;
+  font-size: 11.547px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 18.475px */
+}
+.programm_lang img {
+  cursor: pointer;
+}
+
+.view_about img {
+  margin-right: 0;
+}
+.view_about p {
+  font-size: 19px;
+}
+.aditional_conten_price {
+  color: #4fd0ba;
+  font-family: Gilroy500;
+  font-size: 36.97px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 59.152px */
+}
+
+.aditional_content_bottom div:last-child button {
+  width: 187.31px;
+  height: 48.965px;
+  border-radius: 7.772px;
+  border: 1px solid #515151;
+  background: #262626;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  color: #fff;
+  font-family: Gilroy700;
+  font-size: 15.274px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.aditional_content_bottom div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.aditional_content_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.additional_moduls_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.questions_block {
+  margin-top: 300px;
+}
+.questions_block_left_tabs h3 {
+  color: #fff;
+  text-align: center;
+  font-family: RobotoCondensed400;
+  font-size: 26.038px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 60px;
+}
+
+.questions_block_left_tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 610px;
+  position: relative;
+}
+.more_about {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.more_about a {
+  display: flex;
+  align-items: center;
+}
+.more_about p {
+  color: #d9d9d9;
+  text-align: center;
+  font-family: Gilroy700;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 11px;
+}
+.more_about span {
+  color: #4fd0ba;
+}
+
+.questions_block {
+  margin-bottom: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 280px;
+  align-items: start;
+  position: relative;
+}
+
+.questions_right_form_title {
+  width: 567px;
+  height: 67px;
+  border-radius: 7.772px;
+  border: 1px solid #4fd0ba;
+  background: linear-gradient(257deg, #4fd0ba -129.57%, #010101 52.39%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.questions_right_form_title p {
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy700;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.questions_right_form_title span {
+  color: #4fd0ba;
+}
+.form_container_title {
+  text-align: center;
+}
+
+.form_container_title p {
+  color: #e1e1e1;
+  text-align: center;
+  font-family: Gilroy500;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 156%; /* 37.44px */
+  letter-spacing: 0.36px;
+  margin-top: 25px;
+}
+.form_container_title span {
+  color: #e1e1e1;
+  font-family: Gilroy400;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.195px;
+  text-align: center;
+}
+
+.form_container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 13px;
+}
+.form_container form input,
+.form_container form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 8.549px;
+  border: 1px solid #515151;
+  background: #0f0f0f;
+  padding: 15px 25px;
+  box-shadow: 0px 3.10888px 3.10888px 0px rgba(0, 0, 0, 0.25);
+  color: #e1e1e1;
+  font-family: Gilroy400;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 20.8px */
+}
+.form_container form input:focus,
+.form_container form textarea:focus {
+  border: 2px solid #bbb;
+}
+.form_container form textarea {
+  height: 160px;
+}
+.send_from_btn {
+  width: 198.349px;
+  height: 41.713px;
+  border-radius: 7.772px;
+  border: 1px solid #515151;
+  background: #262626;
+  margin-top: 25px;
+
+  color: #fff;
+  font-family: Gilroy700;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
