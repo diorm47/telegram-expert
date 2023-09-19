@@ -96,11 +96,11 @@ $(document).ready(function () {
 //   }
 // }
 
-// // Mobile menu wrpper
-// function toggleMenu() {
-//   var element = document.querySelector(".nav_mob_menu");
-//   element.classList.toggle("mob_menu_wrapper");
-// }
+// Mobile menu wrpper
+function toggleMenu() {
+  var element = document.querySelector(".nav_mob_menu");
+  element.classList.toggle("mob_menu_wrapper");
+}
 
 // Tabs
 const { Tablist } = jolty;
@@ -153,9 +153,12 @@ document.addEventListener("DOMContentLoaded", function () {
 let currentElementToShow = 0;
 const formElements = document.querySelector(".form-item");
 const formElements2 = document.querySelector(".form-item2");
+const formContainer = document.querySelector(".form_container");
 function toggleForm() {
   formElements.style.opacity = "1";
   formElements2.style.opacity = "1";
+  formContainer.style.display = "block";
+  formContainer.style.opacity = "1";
 }
 
 // Aditional content

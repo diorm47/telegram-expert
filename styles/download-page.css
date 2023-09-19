@@ -5,6 +5,7 @@
 .download_page_content {
   position: relative;
   bottom: 0;
+  overflow: hidden;
 }
 .download_page_block {
   width: 1000px;
@@ -205,4 +206,93 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+@media only screen and (max-width: 1110px) {
+  .download_page_block {
+    width: 100%;
+    height: auto;
+    padding: 15px 40px;
+  }
+
+  .download_page_wrapper,
+  .download_page_bottom {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .download_page_block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 15px;
+    margin-top: 50px;
+  }
+  .overlay {
+    display: none;
+  }
+  .download_page_block_left,
+  .download_page_block_right {
+    width: 100%;
+  }
+  .download_page_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .download_page_title img {
+    left: 0;
+  }
+  .download_page_subtitle {
+    text-align: center;
+  }
+  .download_actions {
+    align-items: center;
+    justify-content: center;
+  }
+  .download_page_block_right {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .download_page_title p {
+    font-size: 20px;
+  }
+  .download_page_subtitle {
+    font-size: 11px;
+    font-style: normal;
+    margin-top: 15px;
+  }
+  .download_page_title {
+    margin-top: 20px;
+  }
+  .download_page_block_right {
+    padding: 0;
+    margin-top: 15px;
+  }
+  .download_actions {
+    margin-top: 30px;
+  }
+  .download_page_title img {
+    width: 40px;
+    top: auto;
+    left: 40px;
+  }
+  .download_page_bottom {
+    margin-top: 100px;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .other_download_action p {
+    font-size: 15px;
+  }
+  .download_page {
+    padding-bottom: 60px;
+  }
 }

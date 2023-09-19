@@ -1,8 +1,7 @@
 @media only screen and (max-width: 1640px) {
   .nav_bar_wrapper {
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 30px 20px;
   }
   .about_description {
     padding-top: 150px;
@@ -301,6 +300,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .prices_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .main_page_title h1 {
     font-size: 30px;
     margin-top: 40px;
@@ -478,5 +484,28 @@
     justify-content: center;
     text-align: center;
     gap: 10px;
+  }
+  .price_card {
+    width: 100%;
+  }
+  .premium_price_card {
+    width: 100% !important;
+  }
+  .price_card_type {
+    padding: 10px 15px;
+  }
+  .video_carousel_arrows {
+    margin-top: 10px;
+  }
+  .login_auth {
+    display: none;
+  }
+
+  .nav_mob_menu_icon {
+    display: flex;
+  }
+  .nav_mob_menu_icon img {
+    width: 30px;
+    cursor: pointer;
   }
 }

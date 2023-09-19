@@ -92,6 +92,43 @@
               <button class="language_toggler">CN</button>
             </div>
           </div>
+          <div class="nav_mob_menu_icon" onclick="toggleMenu()">
+            <img src="./assets/icons/menu.png" alt="" />
+          </div>
+
+          <div class="nav_mob_menu" onclick="toggleMenu()">
+            <img src="./assets/icons/exit.svg" class="exit_icon" alt="" />
+            <div class="nav_menu">
+              <div class="nav_menu_item">
+                <a href="#"><p>Главная</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>О компании</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>Цены</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="./download.html"><p>Загрузить</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>База знаний</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="./for-partners.html"><p>Партнерам</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>Личный кабинет</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>Контакты</p></a>
+              </div>
+            </div>
+            <div class="login_auth">
+              <button class="active_button">Регистрация</button>
+              <button>Вход</button>
+            </div>
+          </div>
         </div>
       </nav>
       <!-- Main Header -->
@@ -955,7 +992,10 @@
             <p>ОСТАЛИСЬ <span>ВОПРОСЫ</span>?</p>
           </div>
 
-          <div class="form_container">
+          <div
+            class="form_container"
+            style="display: none; opacity: 0; transition: opacity 0.5s"
+          >
             <div
               class="form_container_title form-item"
               style="opacity: 0; transition: opacity 0.5s"

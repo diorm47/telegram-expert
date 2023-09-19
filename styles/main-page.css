@@ -663,7 +663,9 @@
 }
 .moduls_price_block {
   margin-top: 220px;
-
+}
+.nav_mob_menu_icon {
+  display: none;
 }
 .moduls_price_block h3 {
   color: #fff;
@@ -926,10 +928,9 @@
 }
 .active_menu_item {
   background: #262626;
-
 }
 .active_menu_item p {
-  color: #FFF !important;
+  color: #fff !important;
 }
 .moduls_wrapper_menu_item {
   width: 100%;
@@ -940,7 +941,6 @@
   border-bottom: 1px solid #4a4a4a;
   cursor: pointer;
   transition: all 0.4s ease;
- 
 }
 
 .moduls_wrapper_menu_item:last-child {
@@ -964,7 +964,7 @@
   display: flex;
   position: relative;
   z-index: 1111;
-  background: #0F0F0F;
+  background: #0f0f0f;
   overflow: hidden;
 }
 .additional_moduls_content {
@@ -1220,4 +1220,42 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.nav_mob_menu {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  transition: all 0.5s ease;
+  transform: translateX(100%);
+  top: 0;
+  z-index: 1115;
+  height: 100vh;
+  background: #0f0f0f;
+}
+.mob_menu_wrapper {
+  transform: translateX(0);
+  transition: all 0.5s ease;
+}
+.nav_mob_menu .nav_menu {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav_mob_menu .login_auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column !important;
+  gap: 20px;
+  margin-top: 40px;
+}
+.login_auth button:last-child {
+  border: 1px solid #fff;
+}
+.exit_icon {
+  position: absolute;
+  top: 30px;
+  right: 20px;
 }
