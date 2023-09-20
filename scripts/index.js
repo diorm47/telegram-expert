@@ -85,16 +85,43 @@ $(document).ready(function () {
     ],
   });
 });
+$(document).ready(function () {
+  $(".slider-nav").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    centerMode: true,
+    asNavFor: ".slider-for",
+    variableWidth: true,
+    focusOnSelect: true,
+    prevArrow: $(".reviews_left"),
+    nextArrow: $(".reviews_right"),
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+        centerMode: false,
+      },
+    ],
+  });
+});
 
-// Navigation active
-// var navItems = document.querySelectorAll(".nav_links a");
-// for (var i = 0; i < navItems.length; i++) {
-//   if (navItems[i].href == window.location.href) {
-//     navItems[i].className = "active_nav_menu";
-//     console.log("window.location.href", window.location.href);
-//     console.log(navItems[i].href);
-//   }
-// }
+$(document).ready(function () {
+  $(".slider-for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    centerMode: true,
+    dots: false,
+    infinite: true,
+    asNavFor: ".slider-nav",
+    fade: true,
+  });
+});
 
 // Mobile menu wrpper
 function toggleMenu() {
@@ -286,7 +313,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // Aos init
 
 AOS.init();
-
 
 // Animation 1
 window.addEventListener("scroll", function () {
