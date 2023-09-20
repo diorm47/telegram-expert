@@ -585,4 +585,12 @@
     width: 100%;
     bottom: -155px;
   }
+  .gallery_carousel .draggable .slick-track {
+    height: 200px;
+    padding-top: 60px;
+  }
+  .header_carousel .slick-center img {
+    filter: blur(0px) !important;
+    width: 300px;
+  }
 }

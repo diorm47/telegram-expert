@@ -16,6 +16,11 @@
   line-height: 100%;
   margin-top: 70px;
 }
+
+.gallery_carousel .slick-center img {
+  filter: blur(0) !important;
+}
+
 .main_page_carousel {
   position: relative !important;
   z-index: 111;
@@ -179,6 +184,7 @@
 .header_carousel .slick-center img {
   filter: blur(0px) !important;
   width: 775px;
+  
 }
 
 .slick-track .slick-active:first-child {
@@ -483,6 +489,15 @@
   flex-direction: column;
   height: 500px !important;
 }
+.gallery_carousel .slick-center {
+  margin-top: -50px;
+}
+.gallery_carousel .slick-center img {
+
+  border-radius: 9px;
+  border: 1px solid #4fd0ba;
+}
+
 .gallery_carousel .main_page_carousel_item p {
   margin-bottom: 16px;
   color: #4fd0ba;
@@ -952,7 +967,8 @@
 .user_comment_item img {
   margin: 0 auto;
 }
-.reviews_left, .reviews_right {
+.reviews_left,
+.reviews_right {
   cursor: pointer;
 }
 
