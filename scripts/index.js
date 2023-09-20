@@ -282,3 +282,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuItems[index].classList.add("active_menu_item");
   }
 });
+
+// Aos init
+
+AOS.init();

@@ -495,7 +495,7 @@
     padding: 10px 15px;
   }
   .video_carousel_arrows {
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .login_auth {
     display: none;
@@ -507,5 +507,22 @@
   .nav_mob_menu_icon img {
     width: 30px;
     cursor: pointer;
+  }
+
+  .video_block_carousel .draggable .slick-track {
+    height: auto;
+  }
+  .active_premium_card_button {
+    width: 100px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+  }
+  .video_card_content {
+    padding: 15px;
+  }
+  .video_block_carousel .slick-center,
+  .video_block_item {
+    width: 350px !important;
+    height: 400px !important;
   }
 }
