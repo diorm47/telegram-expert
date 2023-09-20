@@ -41,7 +41,7 @@
           </div>
           <div class="nav_menu">
             <div class="nav_menu_item">
-              <a href="#"><p>Главная</p></a>
+              <a href="/"><p>Главная</p></a>
             </div>
             <div class="nav_menu_item">
               <a href="#"><p>О компании</p></a>
@@ -74,6 +74,43 @@
               <button class="language_toggler active_lang_btn">RU</button>
               <button class="language_toggler">EN</button>
               <button class="language_toggler">CN</button>
+            </div>
+          </div>
+          <div class="nav_mob_menu_icon" onclick="toggleMenu()">
+            <img src="./assets/icons/menu.png" alt="" />
+          </div>
+
+          <div class="nav_mob_menu" onclick="toggleMenu()">
+            <img src="./assets/icons/exit.svg" class="exit_icon" alt="" />
+            <div class="nav_menu">
+              <div class="nav_menu_item">
+                <a href="/"><p>Главная</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>О компании</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>Цены</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="./download.html"><p>Загрузить</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>База знаний</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="./for-partners.html"><p>Партнерам</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>Личный кабинет</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>Контакты</p></a>
+              </div>
+            </div>
+            <div class="login_auth">
+              <button class="active_button">Регистрация</button>
+              <button>Вход</button>
             </div>
           </div>
         </div>
@@ -255,7 +292,11 @@
           </div>
         </div>
       </div>
-      <img src="./assets/back-gradients/partners.svg" class="download_2" alt="">
+      <img
+        src="./assets/back-gradients/partners.svg"
+        class="download_2"
+        alt=""
+      />
       <!-- Footer -->
       <footer>
         <div class="footer_wrapper">
@@ -322,6 +363,12 @@
           target.classList.add("active");
         });
       });
+
+      // Mobile menu wrpper
+      function toggleMenu() {
+        var element = document.querySelector(".nav_mob_menu");
+        element.classList.toggle("mob_menu_wrapper");
+      }
     </script>
   </body>
 </html>

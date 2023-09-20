@@ -345,3 +345,102 @@
   position: relative;
   z-index: 1111;
 }
+
+.partners_page {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1450px) {
+  .firt_tab_card {
+    width: 100%;
+  }
+  .firt_tab_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .partners_content_title h1 {
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .partners_content_title h1 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .tabs {
+    padding: 0;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .firt_tab_card_title {
+    border-radius: 16px 16px 0px 0px;
+    font-size: 17px;
+    padding: 10px 15px;
+  }
+  .firt_tab_card_content {
+    padding: 10px;
+  }
+  .bonuses_cart_title {
+    padding: 5px;
+  }
+  .bonuses_cart_title p {
+    font-size: 14px;
+  }
+  .firt_tab_card_content_list p {
+    font-size: 15px;
+    margin: 9px 0;
+  }
+  .rules p {
+    font-size: 14px;
+  }
+  .rules div {
+    margin-bottom: 10px;
+  }
+  .firt_tab_card_sell p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+  }
+  .tab {
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+  }
+
+  .conditions_title {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .conditions_title p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .conditions_title h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .conditions_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .auth_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .conditions_tab_content {
+    margin-bottom: 100px;
+}
+}

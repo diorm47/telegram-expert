@@ -20,6 +20,10 @@
   position: relative !important;
   z-index: 111;
 }
+.premium_card_buttons {
+  position: relative;
+  z-index: 1111;
+}
 
 .main_page_title p {
   color: #4fd0ba;
