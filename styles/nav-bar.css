@@ -75,6 +75,8 @@ nav {
 .login_auth button:hover {
   transition: all 0.4s ease;
   border: 1px solid #4fd0ba;
+  box-shadow: 0px 0px 7px 0px #4fd0ba;
+  text-shadow: 0px 0px 7px #4fd0ba;
 }
 
 .language_toggles {

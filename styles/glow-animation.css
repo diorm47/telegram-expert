@@ -77,8 +77,10 @@
   position: absolute;
   bottom: 38px;
   left: 50%;
-  margin-left: -90px;
+  margin-left: -91px;
   color: #fff;
+  border-radius: 10px !important;
+
 }
 
 :not(.overlay) > .card,

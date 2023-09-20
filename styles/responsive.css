@@ -12,8 +12,8 @@
     width: 700px;
   }
   .center_icon {
-    width: 110px;
-    height: 110px;
+    width: 60px;
+    margin-top: -60px;
   }
   .center_icon img {
     width: 60px;

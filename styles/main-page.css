@@ -99,24 +99,35 @@
 
 .header_buttons button:first-child {
   background: #00ffd3;
-
   color: #000;
   font-family: Gilroy700;
   font-size: 19px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: all 0.4s ease;
+}
+.header_buttons button:first-child:hover {
+  background: #04b597;
+  transition: all 0.4s ease;
 }
 .header_buttons button:last-child {
   border: 1px solid #fff;
   background: rgba(0, 0, 0, 0.16);
-
+  transition: all 0.4s ease;
   color: #fff;
   font-family: Gilroy400;
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.header_buttons button:last-child:hover {
+  transition: all 0.4s ease;
+  background: #00ffd3;
+  color: #000;
+  border: none;
+  font-family: Gilroy700;
 }
 
 .header_guarante {
@@ -141,9 +152,15 @@
 }
 
 .main_page_carousel {
+  max-width: 2198px;
+  margin: 0 auto;
   width: 100%;
   margin-top: 120px;
   margin-bottom: 50px;
+}
+.moduls_block {
+  max-width: 1850px;
+  margin: 0 auto;
 }
 
 .slick-dots {
@@ -184,7 +201,6 @@
 .header_carousel .slick-center img {
   filter: blur(0px) !important;
   width: 775px;
-  
 }
 
 .slick-track .slick-active:first-child {
@@ -230,6 +246,8 @@
   color: #4fd0ba;
 }
 .about_description {
+  max-width: 1992px;
+  margin: 0 auto;
   padding-top: 380px;
   padding-bottom: 250px;
   position: relative;
@@ -241,7 +259,7 @@
 .shere_chat_img {
   position: absolute;
   right: 0;
-  bottom: -25%;
+  /* bottom: -25%; */
   transition: bottom 4s;
 }
 
@@ -259,16 +277,9 @@
 }
 
 .center_icon {
-  width: 146px;
-  height: 146px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid rgba(93, 241, 216, 0.5);
   position: absolute;
-  top: 68px;
-  padding-top: 15px;
+  top: 50%;
+  margin-top: -65px;
 }
 
 .moduls_block_title {
@@ -405,6 +416,10 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
+.video_block_carousel {
+  max-width: 1625px;
+  margin: 0 auto;
+}
 
 .is_not_all p {
   color: #fff;
@@ -490,12 +505,12 @@
   height: 500px !important;
 }
 .gallery_carousel .slick-center {
-  margin-top: -50px;
+  margin-top: -25px;
 }
 .gallery_carousel .slick-center img {
-
   border-radius: 9px;
   border: 1px solid #4fd0ba;
+  transform: scale(1.2);
 }
 
 .gallery_carousel .main_page_carousel_item p {
@@ -521,6 +536,9 @@
   gap: 17px;
 }
 .gallery_block {
+  max-width: 1900px;
+  overflow: hidden;
+  margin: 0 auto;
   margin-bottom: 120px;
 }
 
@@ -974,12 +992,12 @@
 
 /*  */
 
-.item_descriptions button {
+.item_descriptions a {
   width: 185px;
   height: 50px;
   background: #010101;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid #4a4a4a;
   color: #fff;
   font-family: Gilroy700;
@@ -988,6 +1006,14 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.item_descriptions a p {
+  position: relative;
+  z-index: 1111;
 }
 
 .moduls_price_card_items_list {
@@ -1014,6 +1040,8 @@
 
 .gallery_carousel .slick-center p {
   display: block !important;
+  position: relative;
+  top: -30px;
 }
 .prices_wrapper {
   display: flex;
@@ -1465,6 +1493,13 @@
 }
 .login_auth button:last-child {
   border: 1px solid #fff;
+  transition: all 0.4s ease;
+}
+.login_auth button:last-child:hover {
+  border: 1px solid #4fd0ba;
+  box-shadow: 0px 0px 7px 0px #4fd0ba;
+  transition: all 0.4s ease;
+  text-shadow: 0px 0px 7px #4fd0ba;
 }
 .exit_icon {
   position: absolute;

@@ -7,8 +7,9 @@ $(document).ready(function () {
     dots: true,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     centerMode: true,
+    speed: 1000,
     focusOnSelect: true,
     responsive: [
       {
@@ -34,6 +35,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: true,
+    speed: 1000,
     centerMode: true,
     focusOnSelect: true,
     prevArrow: $(".gallery_left"),
@@ -63,6 +65,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: true,
+    speed: 1000,
     centerMode: true,
     variableWidth: true,
     focusOnSelect: true,
@@ -90,11 +93,13 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    speed: 1000,
     dots: false,
     arrows: true,
     centerMode: true,
     asNavFor: ".slider-for",
     variableWidth: true,
+
     focusOnSelect: true,
     prevArrow: $(".reviews_left"),
     nextArrow: $(".reviews_right"),
@@ -134,20 +139,20 @@ const { Tablist } = jolty;
 Tablist.initAll();
 
 // Image animation
-let lastScrollTop = 0;
-$(window).on("scroll", function () {
-  let st = $(this).scrollTop();
-  let wrapperTop = $(".about_description").offset().top;
-  let wrapperHeight = $(".about_description").outerHeight();
-  if (st > wrapperTop - $(window).height() && st < wrapperTop + wrapperHeight) {
-    if (st > lastScrollTop) {
-      $(".shere_chat_img").css("bottom", "0%");
-    } else {
-      $(".shere_chat_img  ").css("bottom", "-25%");
-    }
-  }
-  lastScrollTop = st;
-});
+// let lastScrollTop = 0;
+// $(window).on("scroll", function () {
+//   let st = $(this).scrollTop();
+//   let wrapperTop = $(".about_description").offset().top;
+//   let wrapperHeight = $(".about_description").outerHeight();
+//   if (st > wrapperTop - $(window).height() && st < wrapperTop + wrapperHeight) {
+//     if (st > lastScrollTop) {
+//       $(".shere_chat_img").css("bottom", "0%");
+//     } else {
+//       $(".shere_chat_img  ").css("bottom", "-25%");
+//     }
+//   }
+//   lastScrollTop = st;
+// });
 
 // Card prize toggler
 document.addEventListener("DOMContentLoaded", function () {
