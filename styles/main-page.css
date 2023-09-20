@@ -824,6 +824,13 @@
 .premium_price_card {
   width: 450px !important;
 }
+.main_page_carousel_item p {
+  display: none;
+}
+
+.gallery_carousel .slick-center p {
+  display: block !important;
+}
 .prices_wrapper {
   display: flex;
   align-items: center;
@@ -882,6 +889,23 @@
 .additional_moduls {
   margin-top: 270px;
   margin-bottom: 320px;
+}
+.top_modul_box_item_1,
+.top_modul_box_item_2,
+.top_modul_box_item_3,
+.bottom_modul_box_item_1,
+.bottom_modul_box_item_2,
+.bottom_modul_box_item_3 {
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.top_modul_icon {
+  transform: translate(-100%);
+  transition: all 3s ease;
+}
+.bottom_modul_icon {
+  transform: translate(100%);
+  transition: all 3s ease;
 }
 
 .additional_moduls h4 {

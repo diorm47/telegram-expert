@@ -286,3 +286,74 @@ document.addEventListener("DOMContentLoaded", () => {
 // Aos init
 
 AOS.init();
+
+
+// Animation 1
+window.addEventListener("scroll", function () {
+  let scrollPosition = window.scrollY;
+  let windowHeight = window.innerHeight;
+  let triggerPosition =
+    document.querySelector(".top_modul_icon ").offsetTop +
+    document.querySelector(".top_modul_icon ").offsetHeight / 2;
+
+  if (scrollPosition + windowHeight / 2 >= triggerPosition) {
+    animatePoints();
+  }
+});
+
+let animated = false;
+
+function animatePoints() {
+  if (!animated) {
+    animated = true;
+    setTimeout(() => {
+      document.querySelector(".top_modul_icon").style.transform =
+        "translate(0)";
+      document.querySelector(".top_modul_box_item_1").style.opacity = "1";
+    }, 0);
+
+    setTimeout(() => {
+      // document.getElementById("point2").style.opacity = "1";
+      document.querySelector(".top_modul_box_item_2").style.opacity = "1";
+    }, 1000);
+
+    setTimeout(() => {
+      // document.getElementById("point3").style.opacity = "1";
+      document.querySelector(".top_modul_box_item_3").style.opacity = "1";
+    }, 2000);
+  }
+}
+
+// Animation 2
+window.addEventListener("scroll", function () {
+  let scrollPosition = window.scrollY;
+  let windowHeight = window.innerHeight;
+  let triggerPosition =
+    document.querySelector(".top_modul_box_item_2").offsetTop +
+    document.querySelector(".top_modul_box_item_2").offsetHeight / 2;
+
+  if (scrollPosition + windowHeight / 2 >= triggerPosition) {
+    animatePoints2();
+  }
+});
+
+let animated2 = false;
+
+function animatePoints2() {
+  if (!animated2) {
+    animated2 = true;
+    setTimeout(() => {
+      document.querySelector(".bottom_modul_icon").style.transform =
+        "translate(0)";
+      document.querySelector(".bottom_modul_box_item_3").style.opacity = "1";
+    }, 0);
+
+    setTimeout(() => {
+      document.querySelector(".bottom_modul_box_item_2").style.opacity = "1";
+    }, 1000);
+
+    setTimeout(() => {
+      document.querySelector(".bottom_modul_box_item_1").style.opacity = "1";
+    }, 2000);
+  }
+}
