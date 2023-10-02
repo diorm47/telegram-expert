@@ -5,7 +5,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     arrows: false,
     autoplaySpeed: 3000,
     centerMode: true,
@@ -27,6 +27,41 @@ $(document).ready(function () {
     ],
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  function updateSlideStyles() {
+    const slider = document.querySelector(".header_carousel");
+    const activeSlides = slider.querySelectorAll(".slick-active");
+
+    if (activeSlides.length) {
+      let allLeftGr = slider.querySelectorAll(".left_gr");
+      let allRightGr = slider.querySelectorAll(".right_gr");
+
+      allLeftGr.forEach((item) => (item.style.display = ""));
+      allRightGr.forEach((item) => (item.style.display = ""));
+
+      let firstSlideLeftGr = activeSlides[0].querySelector(".left_gr");
+      if (firstSlideLeftGr) firstSlideLeftGr.style.display = "none";
+
+      if (activeSlides[2]) {
+        let thirdSlideRightGr = activeSlides[2].querySelector(".right_gr");
+        if (thirdSlideRightGr) thirdSlideRightGr.style.display = "none";
+      }
+    }
+  }
+
+  // При загрузке страницы:
+  updateSlideStyles();
+
+  // После смены слайдов:
+  const sliderElement = document.querySelector(".header_carousel");
+
+  if (sliderElement) {
+    const slickSliderInstance = $(sliderElement).slick("getSlick");
+    slickSliderInstance.$slider.on("afterChange", updateSlideStyles);
+  }
+});
+
 // Gallery carousel
 $(document).ready(function () {
   $(".gallery_carousel").slick({
@@ -56,6 +91,39 @@ $(document).ready(function () {
       },
     ],
   });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  function updateSlideStyles2() {
+    const slider = document.querySelector(".gallery_carousel");
+    const activeSlides = slider.querySelectorAll(".slick-active");
+
+    if (activeSlides.length) {
+      let allLeftGr = slider.querySelectorAll(".left_gr");
+      let allRightGr = slider.querySelectorAll(".right_gr");
+
+      allLeftGr.forEach((item) => (item.style.display = ""));
+      allRightGr.forEach((item) => (item.style.display = ""));
+
+      let firstSlideLeftGr = activeSlides[0].querySelector(".left_gr");
+      if (firstSlideLeftGr) firstSlideLeftGr.style.display = "none";
+
+      if (activeSlides[2]) {
+        let thirdSlideRightGr = activeSlides[2].querySelector(".right_gr");
+        if (thirdSlideRightGr) thirdSlideRightGr.style.display = "none";
+      }
+    }
+  }
+
+  // При загрузке страницы:
+  updateSlideStyles2();
+
+  // После смены слайдов:
+  const sliderElement = document.querySelector(".gallery_carousel");
+
+  if (sliderElement) {
+    const slickSliderInstance = $(sliderElement).slick("getSlick");
+    slickSliderInstance.$slider.on("afterChange", updateSlideStyles2);
+  }
 });
 // Video carousel
 $(document).ready(function () {
@@ -139,20 +207,20 @@ const { Tablist } = jolty;
 Tablist.initAll();
 
 // Image animation
-// let lastScrollTop = 0;
-// $(window).on("scroll", function () {
-//   let st = $(this).scrollTop();
-//   let wrapperTop = $(".about_description").offset().top;
-//   let wrapperHeight = $(".about_description").outerHeight();
-//   if (st > wrapperTop - $(window).height() && st < wrapperTop + wrapperHeight) {
-//     if (st > lastScrollTop) {
-//       $(".shere_chat_img").css("bottom", "0%");
-//     } else {
-//       $(".shere_chat_img  ").css("bottom", "-25%");
-//     }
-//   }
-//   lastScrollTop = st;
-// });
+let lastScrollTop = 0;
+$(window).on("scroll", function () {
+  let st = $(this).scrollTop();
+  let wrapperTop = $(".about_description").offset().top;
+  let wrapperHeight = $(".about_description").outerHeight();
+  if (st > wrapperTop - $(window).height() && st < wrapperTop + wrapperHeight) {
+    if (st > lastScrollTop) {
+      $(".shere_chat_img").css("right", "0%");
+    } else {
+      $(".shere_chat_img").css("right", "-30%");
+    }
+  }
+  lastScrollTop = st;
+});
 
 // Card prize toggler
 document.addEventListener("DOMContentLoaded", function () {
@@ -177,6 +245,21 @@ document.addEventListener("DOMContentLoaded", function () {
           priceTag.textContent = "49 990 ₽";
           break;
       }
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var flags = document.querySelectorAll(".flag_toggler");
+
+  flags.forEach(function (flag) {
+    flag.addEventListener("click", function () {
+      // Удалить активный класс со всех флагов
+      flags.forEach(function (innerFlag) {
+        innerFlag.classList.remove("active_flag_toggler");
+      });
+
+      // Добавить активный класс к выбранному флагу
+      flag.classList.add("active_flag_toggler");
     });
   });
 });

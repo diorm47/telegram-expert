@@ -68,3 +68,7 @@
   line-height: normal;
   margin-left: 10px;
 }
+
+.footer_login .active_button {
+  box-shadow: none;
+}

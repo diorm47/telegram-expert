@@ -29,6 +29,9 @@
   position: relative;
   z-index: 1111;
 }
+.header_carousel .slick-dots li:last-child {
+  display: none;
+}
 
 .main_page_title p {
   color: #4fd0ba;
@@ -172,8 +175,8 @@
 }
 
 .slick-dots li {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #bfc0c0;
   border: none;
@@ -193,6 +196,32 @@
   align-items: center !important;
   justify-content: center !important;
   height: 470px !important;
+  position: relative;
+}
+
+.right_gr {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 350px !important;
+}
+.left_gr {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 358px !important;
+}
+
+.header_carousel .slick-list .slick-track .slick-active:nth-child(1) .left_gr {
+  display: none !important;
+}
+.header_carousel .slick-list .slick-track .slick-active:nth-child(3) .right_gr {
+  display: none !important;
+}
+
+.slick-center .right_gr,
+.slick-center .left_gr {
+  display: none;
 }
 .main_page_carousel_item img {
   filter: blur(2px);
@@ -258,9 +287,9 @@
 
 .shere_chat_img {
   position: absolute;
-  right: 0;
+  right: -30%;
   /* bottom: -25%; */
-  transition: bottom 4s;
+  transition: right 4s;
 }
 
 .pulse_icon {
@@ -390,6 +419,7 @@
   font-style: normal;
   font-weight: 400;
   margin-bottom: 40px;
+  line-height: 170%;
 }
 
 .moduls_bottom_text p span {
@@ -499,6 +529,12 @@
   text-transform: uppercase;
   margin-bottom: 70px;
 }
+.gallery_carousel .main_page_carousel_item .right_gr {
+  height: 358px;
+}
+.gallery_carousel .main_page_carousel_item .left_gr {
+  height: 358px;
+}
 
 .gallery_carousel .main_page_carousel_item {
   flex-direction: column;
@@ -523,6 +559,11 @@
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+}
+.gallery_carousel,
+.right_gr,
+.gallery_carousel .right_gr {
+  height: 358px;
 }
 
 .gallery_btns {
@@ -618,17 +659,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 140px;
 }
-.video_carousel_arrows img {
+.video_carousel_arrows svg {
   cursor: pointer;
 }
-.video_carousel_arrows img:first-child {
+.video_carousel_arrows svg:first-child {
   margin-right: -40px;
   position: relative;
   z-index: 1111;
 }
-.video_carousel_arrows img:last-child {
+.video_carousel_arrows svg:last-child {
   position: relative;
   z-index: 1110;
 }
@@ -700,7 +741,10 @@
 }
 .moduls_price_block {
   margin-top: 220px;
+  position: relative;
+  z-index: 111;
 }
+
 .nav_mob_menu_icon {
   display: none;
 }
@@ -736,8 +780,21 @@
   justify-content: center;
   gap: 40px;
 }
-.toggle_app_lang img {
+.toggle_app_lang div div {
   cursor: pointer;
+  filter: brightness(0.4);
+  cursor: pointer;
+}
+.toggle_app_lang div div img {
+  width: 45.826px;
+  height: 30.304px;
+}
+.active_flag_toggler {
+  filter: brightness(1) !important;
+}
+.active_flag_toggler img {
+  width: 52px !important;
+  height: 34px !important;
 }
 
 .toggle_app_lang {
@@ -926,6 +983,36 @@
   justify-content: space-between;
   position: relative;
   bottom: -200px;
+}
+.more_about img {
+  margin-right: 0;
+}
+.more_about p::after {
+  background-color: #00ffd3;
+}
+.reviews_arrows svg,
+.video_carousel_arrows svg {
+  transition: all 0.4s ease;
+}
+.reviews_arrows svg:hover circle,
+.video_carousel_arrows svg:hover circle {
+  transition: all 0.4s ease;
+  fill: #4c84d1;
+}
+.video_block .video_carousel_arrows {
+  margin-top: 60px;
+}
+.reviews_arrows svg:hover path,
+.video_carousel_arrows svg:hover path {
+  transition: all 0.4s ease;
+  fill: #fff !important;
+}
+.more_revs_btn {
+  width: 416px;
+}
+.price_card_type {
+  position: relative;
+  z-index: 111;
 }
 .user_comment {
   width: 1350px;
@@ -1279,13 +1366,17 @@
   border: 1px solid #515151;
   background: #262626;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+  transition: all 0.4s ease;
   color: #fff;
   font-family: Gilroy700;
   font-size: 15.274px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.aditional_content_bottom div:last-child button:active {
+  background: #000;
+  transition: all 0.4s ease;
 }
 
 .aditional_content_bottom div:last-child {

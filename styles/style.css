@@ -56,3 +56,12 @@ button {
 .vector_gradient {
   position: absolute;
 }
+
+
+.header_carousel .slick-list .slick-track .slick-active:nth-child(1) {
+  display: none !important;
+  background: red;
+}
+.header_carousel .slick-list .slick-track .slick-active:nth-child(3) .right_gr {
+  display: none !important;
+}
