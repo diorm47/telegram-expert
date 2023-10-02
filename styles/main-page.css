@@ -741,8 +741,7 @@
 }
 .moduls_price_block {
   margin-top: 220px;
-  position: relative;
-  z-index: 111;
+
 }
 
 .nav_mob_menu_icon {
@@ -799,6 +798,8 @@
 
 .toggle_app_lang {
   margin-bottom: 100px;
+  position: relative;
+  z-index: 111;
 }
 
 .price_card_type {
@@ -806,6 +807,7 @@
   background: #060606;
   padding: 30px 60px;
   background: #060606;
+  
 }
 
 .price_card_type p {
