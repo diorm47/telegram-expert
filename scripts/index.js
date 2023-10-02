@@ -266,15 +266,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Questions form
 let currentElementToShow = 0;
+
 const formElements = document.querySelector(".form-item");
 const formElements2 = document.querySelector(".form-item2");
 const formContainer = document.querySelector(".form_container");
+
 function toggleForm() {
-  formElements.style.opacity = "1";
-  formElements2.style.opacity = "1";
   formContainer.style.display = "block";
-  formContainer.style.opacity = "1";
+
+  setTimeout(() => {
+    formContainer.style.opacity = "1";
+  }, 10);  // Появление формы
+
+  setTimeout(() => {
+    formElements.style.opacity = "1";
+  }, 400);  // Появление заголовка (после 600ms)
+
+  setTimeout(() => {
+    formElements2.style.opacity = "1";
+  }, 800);  // Появление формы ввода (после 1100ms)
 }
+
 
 // Aditional content
 const menuContent = [
